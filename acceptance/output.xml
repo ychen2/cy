@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_20)" generated="20150306 12:18:16.029">
+<suite source="C:\Users\Yi\Documents\GitHub\cy\acceptance\Feature1Tests.txt" name="Feature1Tests" id="s1">
+<test name="Test Case 1" id="s1-t1">
+<kw type="kw" name="Start Program">
+<doc></doc>
+<arguments>
+<arg>7 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.422">No keyword with name 'Start Program' found.</msg>
+<status endtime="20150306 12:18:16.423" starttime="20150306 12:18:16.421" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.426" starttime="20150306 12:18:16.416" status="FAIL">No keyword with name 'Start Program' found.</status>
+</test>
+<test name="Test Case 2" id="s1-t2">
+<kw type="kw" name="Start Program Mixed">
+<doc></doc>
+<arguments>
+<arg>dog 2 true 3.5</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.433">No keyword with name 'Start Program Mixed' found.</msg>
+<status endtime="20150306 12:18:16.434" starttime="20150306 12:18:16.432" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.436" starttime="20150306 12:18:16.428" status="FAIL">No keyword with name 'Start Program Mixed' found.</status>
+</test>
+<test name="Test Case 3" id="s1-t3">
+<kw type="kw" name="Start Program With Optionals">
+<doc></doc>
+<arguments>
+<arg>7 --type box 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.442">No keyword with name 'Start Program With Optionals' found.</msg>
+<status endtime="20150306 12:18:16.442" starttime="20150306 12:18:16.441" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.444" starttime="20150306 12:18:16.438" status="FAIL">No keyword with name 'Start Program With Optionals' found.</status>
+</test>
+<test name="Test Case 4" id="s1-t4">
+<kw type="kw" name="Start Program With Short">
+<doc></doc>
+<arguments>
+<arg>7 -t box 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.451">No keyword with name 'Start Program With Short' found.</msg>
+<status endtime="20150306 12:18:16.451" starttime="20150306 12:18:16.449" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.453" starttime="20150306 12:18:16.446" status="FAIL">No keyword with name 'Start Program With Short' found.</status>
+</test>
+<test name="Test Case 5" id="s1-t5">
+<kw type="kw" name="Start Program With Xml">
+<doc></doc>
+<arguments>
+<arg>7 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.462">No keyword with name 'Start Program With Xml' found.</msg>
+<status endtime="20150306 12:18:16.462" starttime="20150306 12:18:16.460" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.464" starttime="20150306 12:18:16.456" status="FAIL">No keyword with name 'Start Program With Xml' found.</status>
+</test>
+<test name="Test Case 6" id="s1-t6">
+<kw type="kw" name="Start Program With Restricted">
+<doc></doc>
+<arguments>
+<arg>7 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.469">No keyword with name 'Start Program With Restricted' found.</msg>
+<status endtime="20150306 12:18:16.469" starttime="20150306 12:18:16.468" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.471" starttime="20150306 12:18:16.466" status="FAIL">No keyword with name 'Start Program With Restricted' found.</status>
+</test>
+<test name="Test Case 7" id="s1-t7">
+<kw type="kw" name="Start Program With Required">
+<doc></doc>
+<arguments>
+<arg>7 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.477">No keyword with name 'Start Program With Required' found.</msg>
+<status endtime="20150306 12:18:16.477" starttime="20150306 12:18:16.475" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.479" starttime="20150306 12:18:16.473" status="FAIL">No keyword with name 'Start Program With Required' found.</status>
+</test>
+<test name="Test Case 8" id="s1-t8">
+<kw type="kw" name="Start Program With Mutually Exclusive">
+<doc></doc>
+<arguments>
+<arg>7 5 2</arg>
+</arguments>
+<msg level="FAIL" timestamp="20150306 12:18:16.484">No keyword with name 'Start Program With Mutually Exclusive' found.</msg>
+<status endtime="20150306 12:18:16.484" starttime="20150306 12:18:16.483" status="FAIL"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status critical="yes" endtime="20150306 12:18:16.485" starttime="20150306 12:18:16.481" status="FAIL">No keyword with name 'Start Program With Mutually Exclusive' found.</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status endtime="20150306 12:18:16.489" starttime="20150306 12:18:16.032" status="FAIL"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8">Critical Tests</stat>
+<stat pass="0" fail="8">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="8" name="Feature1Tests" id="s1">Feature1Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20150306 12:18:16.405">Error in file 'C:\Users\Yi\Documents\GitHub\cy\acceptance\Feature1Tests.txt': Importing test library 'Feature1Keywords' failed: NoClassDefFoundError: edu/jsu/mcis/TooManyArgValuesException
+java.lang.NoClassDefFoundError: 
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:340)
+	at robot.utils.importer$py._import$13(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py:151)
+	at robot.utils.importer$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py)
+	at robot.utils.importer$py.import_$28(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py:238)
+	at robot.utils.importer$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py)
+	at robot.utils.importer$py._import_class_or_module$4(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py:67)
+	at robot.utils.importer$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py)
+	at robot.utils.importer$py.import_class_or_module$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py:64)
+	at robot.utils.importer$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/importer.py)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:408)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.utils.application$py._execute$11(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:98)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:45)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:432)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:60)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:53)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at org.robotframework.RobotFramework.run(RobotFramework.java:62)
+	at org.robotframework.RobotFramework.main(RobotFramework.java:37)
+Caused by: java.lang.ClassNotFoundException: edu.jsu.mcis.TooManyArgValuesException
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 165 more
+PYTHONPATH:
+  C:\RobotFramework\robotframework-2.8.5.jar\Lib\robot\libraries
+  C:\RobotFramework\robotframework-2.8.5.jar\Lib
+  C:\RobotFramework\Lib
+  __classpath__
+  __pyclasspath__/
+  .
+  C:\Users\Yi\Documents\GitHub\cy\acceptance
+CLASSPATH:
+  .
+  ..\build\classes\main
+  C:\RobotFramework\robotframework-2.8.5.jar
+  C:\RobotFramework\swinglibrary-1.5.1.jar</msg>
+</errors>
+</robot>

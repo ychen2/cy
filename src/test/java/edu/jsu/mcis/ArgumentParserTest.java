@@ -22,18 +22,46 @@ public class ArgumentParserTest {
 	}
 	@Test
 	public void testAddArgumentValue(){
-		p.addArguments("length","7");
-		p.addArguments("width","5");
-		p.addArguments("height","2");
+		p.addArguments("length");
+		p.addArguments("width");
+		p.addArguments("height");
+		p.setValue("7");
+		p.setValue("5");
+		p.setValue("2");
 		assertEquals("7",p.getArgumentValue("length"));
 		assertEquals("5",p.getArgumentValue("width"));
 		assertEquals("2",p.getArgumentValue("height"));
 	}
 	@Test(expected = MissingValueException.class)
-	public void testMissingArgumentValue() throws MissingValueException{
+	public void testMissingArgumentValue() throws MissingValueException,TooManyValueException{
 		p.addArguments("length");
 		p.addArguments("width");
 		p.addArguments("height");
 		p.parse("7 5");
 	}
+	@Test(expected = TooManyValueException.class)
+	public void testTooManyValue() throws TooManyValueException,MissingValueException{
+		p.addArguments("length");
+		p.addArguments("width");
+		p.addArguments("height");
+		p.parse("7 5 2 6 2");
+	}
+	@Test
+	public void testSetDataType(){
+		p.addArguments("length");
+		p.addArguments("width");
+		p.addArguments("height");
+		p.setDataType("Integer");
+		p.setDataType("Boolean");
+		p.setDataType("String");
+		assertEquals("Integer",p.getArgumentType("length"));
+		assertEquals("Boolean",p.getArgumentType("width"));
+		assertEquals("String",p.getArgumentType("height"));
+	}
+	@Test
+	public void testGetOptionalArgumentFromCMD()throws TooManyValueException,MissingValueException{
+		p.parse("--help --type -t");
+		assertEquals(3,p.getOptArguments());
+	}
+	
 }

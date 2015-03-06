@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ArgumentParser.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cy</a> &gt; <a href="index.source.html" class="el_package">edu.jsu.mcis</a> &gt; <span class="el_source">ArgumentParser.java</span></div><h1>ArgumentParser.java</h1><pre class="source lang-java linenums">package edu.jsu.mcis;
+
+import java.util.*;
+import java.io.*;
+
+public class ArgumentParser {
+	private HashMap &lt;String, String&gt; argValue;
+	private HashMap &lt;String, String&gt; argType;
+	private ArrayList&lt;String&gt; argumentNames;
+	private ArrayList&lt;String&gt; argumentValues;
+	private ArrayList&lt;String&gt; optionalArgument;
+	private ArrayList&lt;String&gt; dataType;
+<span class="fc" id="L13">	private int valueIn = 0;</span>
+<span class="fc" id="L14">	private int typeIn = 0;</span>
+<span class="fc" id="L15">	public ArgumentParser(){</span>
+<span class="fc" id="L16">		argValue= new HashMap&lt;String, String&gt;();</span>
+<span class="fc" id="L17">		argumentNames = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L18">		argumentValues = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L19">		optionalArgument = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L20">		argType = new HashMap&lt;String, String&gt;();</span>
+<span class="fc" id="L21">	}</span>
+	public void addArguments(String str){
+<span class="fc" id="L23">		argumentNames.add(str);</span>
+<span class="fc" id="L24">	}</span>
+	public void setValue(String value){
+<span class="fc" id="L26">		argValue.put(argumentNames.get(valueIn),value);</span>
+<span class="fc" id="L27">		valueIn++;</span>
+<span class="fc" id="L28">	}</span>
+	public void setDataType(String type){
+<span class="fc" id="L30">		argType.put(argumentNames.get(typeIn),type);</span>
+<span class="fc" id="L31">		typeIn++;</span>
+<span class="fc" id="L32">	}</span>
+	
+	//public int getNumType(){
+		//return dataType.size();
+	//}
+	public int getNumArguments(){
+<span class="fc" id="L38">		return argumentNames.size();</span>
+	}
+	public String getArgumentValue(String name){
+<span class="fc" id="L41">		return argValue.get(name);</span>
+	}
+	public String getArgumentType(String name){
+<span class="fc" id="L44">		return argType.get(name);</span>
+	}
+	public int getNumValues(){
+<span class="fc" id="L47">		return argumentValues.size();</span>
+	}
+	public int getOptArguments(){
+<span class="fc" id="L50">		return optionalArgument.size();</span>
+	}
+	public void parse(String str) throws MissingValueException,TooManyValueException{
+<span class="fc" id="L53">		ArrayList&lt;String&gt; arg = new ArrayList&lt;String&gt;();</span>
+<span class="fc" id="L54">		Scanner scan = new Scanner(str);</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">		while(scan.hasNext()){</span>
+<span class="fc" id="L56">			arg.add(scan.next());</span>
+		}
+<span class="fc bfc" id="L58" title="All 2 branches covered.">		for(String s : arg)</span>
+		{
+<span class="fc bfc" id="L60" title="All 4 branches covered.">			if(s.startsWith(&quot;--&quot;)||s.startsWith(&quot;-&quot;))</span>
+<span class="fc" id="L61">				optionalArgument.add(s);</span>
+<span class="fc" id="L62">			else argumentValues.add(s);</span>
+<span class="fc" id="L63">		}</span>
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		if(getNumArguments() &gt; getNumValues())</span>
+<span class="fc" id="L65">			throw new MissingValueException(&quot;not enough!&quot;);</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">		else if(getNumArguments() &lt; getNumValues())</span>
+<span class="fc" id="L67">			throw new TooManyValueException(&quot;too many&quot;);</span>
+		
+<span class="fc" id="L69">	}</span>
+	public String getHelpText(){
+<span class="nc" id="L71">		String help = &quot;usage:&quot;;</span>
+<span class="nc" id="L72">		return help;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>
