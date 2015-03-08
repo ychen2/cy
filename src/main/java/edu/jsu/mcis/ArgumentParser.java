@@ -37,7 +37,15 @@ public class ArgumentParser {
 	public int getNumArguments(){
 		return argumentNames.size();
 	}
-	public String getArgumentValue(String name){
+	public Object getArgumentValue(String name){
+		if(argType.get(name) == "Integer")
+			return Integer.parseInt(argValue.get(name));
+		else if(argType.get(name) == "Boolean")
+			return Boolean.parseBoolean(argValue.get(name));
+		else if(argType.get(name) == "Float")
+			return Double.parseDouble(argValue.get(name));
+		else if(argType.get(name) == "String")
+			return argValue.get(name);
 		return argValue.get(name);
 	}
 	public String getArgumentType(String name){
@@ -59,12 +67,21 @@ public class ArgumentParser {
 		{
 			if(s.startsWith("--")||s.startsWith("-"))
 				optionalArgument.add(s);
-			else argumentValues.add(s);
+			else {
+				argumentValues.add(s);
+			}
 		}
 		if(getNumArguments() > getNumValues())
 			throw new MissingValueException("not enough!");
 		else if(getNumArguments() < getNumValues())
 			throw new TooManyValueException("too many");
+		else if(getNumArguments() == getNumValues())
+		{
+			for(int i = 0; i < getNumArguments(); i++)
+			{
+				setValue(argumentValues.get(i));
+			}
+		}
 		
 	}
 	public String getHelpText(){

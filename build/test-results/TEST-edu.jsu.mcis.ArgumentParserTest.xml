@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-03-06T18:18:07" hostname="cylaiye" time="0.009">
+<testsuite name="edu.jsu.mcis.ArgumentParserTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-03-08T21:34:18" hostname="Yi-PC" time="0.006">
   <properties/>
-  <testcase name="testTooManyValue" classname="edu.jsu.mcis.ArgumentParserTest" time="0.006"/>
+  <testcase name="testTooManyValue" classname="edu.jsu.mcis.ArgumentParserTest" time="0.004"/>
   <testcase name="testSetDataType" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
   <testcase name="testAddArgumentValue" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <testcase name="testGetOptionalArgumentFromCMD" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
+  <testcase name="testGetTypeCorrect" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
+  <testcase name="testGetOptionalArgumentFromCMD" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
   <testcase name="testAddArgument" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
-  <testcase name="testMissingArgumentValue" classname="edu.jsu.mcis.ArgumentParserTest" time="0.001"/>
+  <testcase name="testMissingArgumentValue" classname="edu.jsu.mcis.ArgumentParserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

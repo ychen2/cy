@@ -60,8 +60,26 @@ public class ArgumentParserTest {
 	}
 	@Test
 	public void testGetOptionalArgumentFromCMD()throws TooManyValueException,MissingValueException{
-		p.parse("--help --type -t");
+		p.addArguments("length");
+		p.addArguments("width");
+		p.addArguments("height");
+		p.parse("--help 7 --type 5 -t 2");
 		assertEquals(3,p.getOptArguments());
 	}
-	
+	@Test
+	public void testGetTypeCorrect()throws TooManyValueException,MissingValueException{
+		p.addArguments("length");
+		p.addArguments("rain");
+		p.addArguments("height");
+		p.addArguments("width");
+		p.setDataType("Integer");
+		p.setDataType("Boolean");
+		p.setDataType("Float");
+		p.setDataType("String");
+		p.parse("7 true 5.2 2");
+		assertEquals(7,p.getArgumentValue("length"));
+		assertEquals(true,p.getArgumentValue("rain"));
+		assertEquals(5.2,p.getArgumentValue("height"));
+		assertEquals("2",p.getArgumentValue("width"));
+	}
 }
